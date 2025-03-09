@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reddit Post Extractor</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #FF4500;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #FF5722;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    .progress {
+      margin-top: 10px;
+      height: 10px;
+      width: 100%;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      overflow: hidden;
+      display: none;
+    }
+    .progress-bar {
+      height: 100%;
+      background-color: #FF4500;
+      width: 0%;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <h2>Reddit Post Extractor</h2>
+  <button id="extractButton">Extract from all Reddit tabs</button>
+  <div class="progress" id="progressContainer">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

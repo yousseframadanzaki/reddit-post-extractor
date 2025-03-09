@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Reddit Post Extractor",
+    "version": "1.0",
+    "description": "Extracts and downloads content from open Reddit tabs",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting",
+      "downloads"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "https://*.reddit.com/*"
+    ]
+  }
